@@ -8,8 +8,8 @@ alias df="duf"
 alias dig="dog"
 alias du="ncdu"
 alias http="xh"
-alias ls="exa -lah --icons --git"
-alias tree="exa --tree --level=2 --long --icons --git -lha"
+alias la="exa -lah --icons --git"
+alias lt="exa --tree --level=2 --long --icons --git -lha"
 alias vim="nvim"
 
 # My functions
