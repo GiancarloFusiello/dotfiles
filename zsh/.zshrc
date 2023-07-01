@@ -26,7 +26,7 @@ cx() { cd "$@" && ls; }
 # My key bindings
 bindkey '^ ' autosuggest-accept
 bindkey '^u' history-beginning-search-backward
-bindkey '^i' history-beginning-search-forward
+bindkey '^y' history-beginning-search-forward
 
 # My environment variables
 PYTHONDONTWRITEBYTECODE=1
