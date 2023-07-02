@@ -43,6 +43,9 @@ source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-high
 # configure asdf
 source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+# Initialize zoxide
+eval "$(zoxide init zsh)"
+
 # Start Starship
 eval "$(starship init zsh)"
 
