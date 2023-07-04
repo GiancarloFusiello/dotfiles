@@ -3,7 +3,7 @@
 	editor = nano
 	excludesfile = /Users/giancarlo/.gitignore
 [push]
-	default = current
+	autoSetupRemote = true
 [user]
 	name = Giancarlo Fusiello
 	email = 7973166+GiancarloFusiello@users.noreply.github.com
@@ -12,3 +12,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[pull]
+	rebase = true
