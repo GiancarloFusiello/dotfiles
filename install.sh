@@ -11,6 +11,10 @@ stow iterm
 stow startship
 stow zsh
 
+# install nvchad nvim config
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+stow nvim
+
 # add languages to asdf
 asdf plugin-add python
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
