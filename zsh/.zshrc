@@ -29,19 +29,20 @@ bindkey '^u' history-beginning-search-backward
 bindkey '^y' history-beginning-search-forward
 
 # My environment variables
-PYTHONDONTWRITEBYTECODE=1
+export PYTHONDONTWRITEBYTECODE=1
+export BREW_PREFIX="/opt/homebrew"
 
 # Add location of brew packages to PATH
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$BREW_PREFIX/bin:$PATH"
 
 # Start zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Start zsh-fast-syntax-highlighting
-source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $BREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # configure asdf
-source /opt/homebrew/opt/asdf/libexec/asdf.sh
+source $BREW_PREFIX/opt/asdf/libexec/asdf.sh
 
 # Initialize zoxide
 eval "$(zoxide init zsh)"
