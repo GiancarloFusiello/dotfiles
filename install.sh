@@ -8,11 +8,11 @@ brew bundle
 stow stow-global-ignore
 stow git
 stow iterm
-stow startship
+stow starship
 stow zsh
 
 # install nvchad nvim config
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 stow nvim
 
 # add languages to asdf
