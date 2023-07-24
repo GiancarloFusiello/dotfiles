@@ -50,3 +50,8 @@ eval "$(zoxide init zsh)"
 # Start Starship
 eval "$(starship init zsh)"
 
+# ensure git tab completion works
+autoload -Uz compinit && compinit
+
+# ZSH ignore case for suggestions
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
