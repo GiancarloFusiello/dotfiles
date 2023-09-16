@@ -2,3 +2,4 @@
 Brewfile.*
 .vscode/
 .tool-versions
+venv/
