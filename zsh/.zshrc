@@ -23,11 +23,6 @@ alias gl="git log"
 # My functions
 cx() { cd "$@" && ls; }
 
-# My key bindings
-bindkey '^ ' autosuggest-accept
-bindkey '^u' history-beginning-search-backward
-bindkey '^y' history-beginning-search-forward
-
 # My environment variables
 export PYTHONDONTWRITEBYTECODE=1
 export BREW_PREFIX="/opt/homebrew"
@@ -55,3 +50,9 @@ autoload -Uz compinit && compinit
 
 # ZSH ignore case for suggestions
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
+
+# My key bindings
+bindkey '^ ' autosuggest-accept
+bindkey '^u' history-beginning-search-backward
+bindkey '^y' history-beginning-search-forward
+
